@@ -1,11 +1,9 @@
-# hopsitalprojectteamthree
 ## Hospital Name: Temiskaming Hospital
-## Golden rules (to team members):
-  * Pull everything first
-  * Update database
-  * Add-migration
-  * Hit build
-  * Push everything
+
+In this team project, we redesigned an existing hospital website, and created several new features that we as a team believed would benefit and improve service to the user of the website and hospital visitors and patients. 
+
+I created a Public Health Crisis Alert system and Long-Term Stay Booking System
+
 ## Team members: 
 * Priyanka Khadilkar - n01351009
 * Alexa Perez - n01353378
@@ -14,37 +12,9 @@
 * Kshitija - 01363715
 * Eseroghene Omene - N01374963
 ## Team members' features and contribution:
-### Paul: Log in system + Get Well Soon Card
-  * Log in system
-    * Description: Users will be classified into 3 types with different roles that they have on the site: Admin, Editor, Registered User
-    * Files contributed: 
-      * Model
-        * AccountViewModels: add in the AdminRegister Model where only admin can add and assign role to users.
-        * RoleViewModels: a class contains all the role name in the website
-      * View:
-        * AdminRegister (under Account folder): this is the interface allows admin to assign roles and register for employees.
-        * Role folder: these interfaces allow admin to add, update, delete and view all the roles.
-      * Controllers:
-        * Account Controller: modify the Register function so anyone who register becomes Registered User. Add in the AdminRegister to allow admin to assign roles for different people
-        * Role Controller: algorithm behind the Roles view and models.
-  * Get Well Soon Card:
-    * Description: Logged in user can see, add, update and delete a card for the patient who is now in the hospital
-    * Files contributed:
-      * Model:
-        * GetWellSoonCard.cs, CardDesign.cs: These two are in a one to many relationship. One Card has one design but one designs can be applied in many cards
-        * ShowGetWell.cs, PersonalListGetWell.cs, ListGetWell.cs, UpdateGetWell.cs, AddGetWellCard.cs: These viewmodels are used to display information in respecitve page
-      * View:
-        * CardDesign folder: showing all the card designs for admin and editor to view, add, edit and delete
-        * GetWellSoonCard folder: 
-          * List: a page displaying all cards for admin, editor to view
-          * Personal List: a page displaying all cards for a particular users who logged
-          * Index: a page for guests to logged in and create the card
-          * Add, Delete, Show, Update: the interface for users to interact with the page with different actions.
-       * Controllers: 
-        * CardDesignController, GetWellSoonCardController: the algorithm behind the CardDesign's and GetWellSoonCard's views and models
+
 ### Vitaliy: Public Health Crisis Alert and Long-term Stay at the Hospital
-  **Public Health Crisis Alert**
-  
+  **Public Health Crisis Alert**  
 
 
    * Description: This feature is only activated when the public health crisis is currently active, and has not been officially ended. All users will be able to see historical list of previous crises, and read articles related to each crisis.  If there is no active public health crisis, there will be no interaction with this feature by any users, and no access to it. To activate the alert on the main page (/Home/Index), the administrator of the page needs to log in, and navigate to /Crisis/Index where, as added security, they will be re-directed to appropriate page based on their permissions. When redirected, administrators can create new “Crisis” entry which will make this crisis active. To deactivate crisis alert, admin can update the crisis from the administrator interface. Administrators also able to add, edit, and delete articles accessible from /Article/Index, where they will be redirected to admin interface
@@ -73,6 +43,9 @@
         * ArticleController.cs, CrisisControler.cs – enables functionality and interaction between models, views, and databases
         
  **Long-term Stay at the Hospital**
+ ![](hospital1.jpg)
+ ![](hospital2.jpg)
+ ![](hospital3.jpg)
 
         
 
@@ -94,6 +67,37 @@
       * Controllers:
         * RoomController.cs – enables functionality and interaction between models, views, and databases
       
+
+
+### Paul: Log in system + Get Well Soon Card
+  * Log in system
+    * Description: Users will be classified into 3 types with different roles that they have on the site: Admin, Editor, Registered User
+    * Files contributed: 
+      * Model
+        * AccountViewModels: add in the AdminRegister Model where only admin can add and assign role to users.
+        * RoleViewModels: a class contains all the role name in the website
+      * View:
+        * AdminRegister (under Account folder): this is the interface allows admin to assign roles and register for employees.
+        * Role folder: these interfaces allow admin to add, update, delete and view all the roles.
+      * Controllers:
+        * Account Controller: modify the Register function so anyone who register becomes Registered User. Add in the AdminRegister to allow admin to assign roles for different people
+        * Role Controller: algorithm behind the Roles view and models.
+  * Get Well Soon Card:
+    * Description: Logged in user can see, add, update and delete a card for the patient who is now in the hospital
+    * Files contributed:
+      * Model:
+        * GetWellSoonCard.cs, CardDesign.cs: These two are in a one to many relationship. One Card has one design but one designs can be applied in many cards
+        * ShowGetWell.cs, PersonalListGetWell.cs, ListGetWell.cs, UpdateGetWell.cs, AddGetWellCard.cs: These viewmodels are used to display information in respecitve page
+      * View:
+        * CardDesign folder: showing all the card designs for admin and editor to view, add, edit and delete
+        * GetWellSoonCard folder: 
+          * List: a page displaying all cards for admin, editor to view
+          * Personal List: a page displaying all cards for a particular users who logged
+          * Index: a page for guests to logged in and create the card
+          * Add, Delete, Show, Update: the interface for users to interact with the page with different actions.
+       * Controllers: 
+        * CardDesignController, GetWellSoonCardController: the algorithm behind the CardDesign's and GetWellSoonCard's views and models
+
 ### Alexa: Doctor's Blogs + Live Wait Times
   * Doctor's Blogs
     * Description: This Feature can be accessed by all users and guests, Editors(Doctors) will be able to write blog entries about their general interests, which can be related to medicine, and they will only be able to see,edit or delete their own blog entries. Admins will have full access to all blog entries and functionalities. Guests and Registered Users will only be able to see the entries.
