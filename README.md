@@ -44,8 +44,11 @@ I created a Public Health Crisis Alert system and Long-Term Stay Booking System
         
  **Long-term Stay at the Hospital**
  ![](hospital1.jpg)
+ -----
  ![](hospital2.jpg)
+ ----
  ![](hospital3.jpg)
+ ----
 
         
 
