@@ -43,12 +43,19 @@ I created a Public Health Crisis Alert system and Long-Term Stay Booking System
         * ArticleController.cs, CrisisControler.cs – enables functionality and interaction between models, views, and databases
         
  **Long-term Stay at the Hospital**
+ 
+ List of all Rooms
+ 
  ![](hospital1.jpg)
- -----
+ 
+ One Room Details
+ 
  ![](hospital2.jpg)
- ----
+
+Booked Room Details
+
  ![](hospital3.jpg)
- ----
+
 
         
 
