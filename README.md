@@ -2,7 +2,7 @@
 
 In this team project, we redesigned an existing hospital website, and created several new features that we as a team believed would benefit and improve service to the user of the website and hospital visitors and patients. 
 
-I created a Public Health Crisis Alert system and Long-Term Stay Booking System
+I created a Long-Term Stay Booking System and Public Health Crisis Alert System
 
 ## Team members: 
 * Priyanka Khadilkar - n01351009
@@ -13,34 +13,7 @@ I created a Public Health Crisis Alert system and Long-Term Stay Booking System
 * Eseroghene Omene - N01374963
 ## Team members' features and contribution:
 
-### Vitaliy: Public Health Crisis Alert and Long-term Stay at the Hospital
-  **Public Health Crisis Alert**  
 
-
-   * Description: This feature is only activated when the public health crisis is currently active, and has not been officially ended. All users will be able to see historical list of previous crises, and read articles related to each crisis.  If there is no active public health crisis, there will be no interaction with this feature by any users, and no access to it. To activate the alert on the main page (/Home/Index), the administrator of the page needs to log in, and navigate to /Crisis/Index where, as added security, they will be re-directed to appropriate page based on their permissions. When redirected, administrators can create new “Crisis” entry which will make this crisis active. To deactivate crisis alert, admin can update the crisis from the administrator interface. Administrators also able to add, edit, and delete articles accessible from /Article/Index, where they will be redirected to admin interface
-    * Files Contributed:
-      * Models:
-        * Crisis.cs – represents information needed to describe the idea of “Crisis” entry, and list of all articles
-        * Article.cs – represent information needed to describe an “Article” entry
-      * ViewModels:
-        * ShowCrisis.cs – allows to pass information about both article and crisis to same view
-      * Views: 
-        * Article:
-          * Add.cshtml – administrator interface where they can add new article
-          * Index.cshtml – the page which re-directs user to appropriate interface based on their permissions.
-          * List.cshtml – Public list of all articles and crises list in the system
-          * ListAdm.cshtml – Administrator interface in addition to see a list of all articles and crises, it displays controls that allow to update or delete the record
-          * Update.cshtml – Administrator page, where they can update specific record selected from administrator list interface
-          * ViewArticle.cshtml – Public page to read selected article from list of all articles
-        * Crisis:
-          * Add.cshtml - administrator interface where they can add new crisis, and automatically create an alert on main page
-          * Index.cshtml – this page redirects user to appropriate public or administrator list of all crisis’s records
-          * List.cshtml – public list of crises 
-          * ListAdm.cshtml – Administrator view of crises list, where they have controls to update, edit, or delete record
-          * Update.cshtml – Administrator page, where they can update specific record selected from administrator list interface
-          * ViewCrisis.cs - Public page where users can see all articles related to the crisis
-      * Controllers:
-        * ArticleController.cs, CrisisControler.cs – enables functionality and interaction between models, views, and databases
         
  **Long-term Stay at the Hospital**
  
@@ -77,7 +50,36 @@ Booked Room Details
       * Controllers:
         * RoomController.cs – enables functionality and interaction between models, views, and databases
       
+### Vitaliy: Public Health Crisis Alert and Long-term Stay at the Hospital
+  **Public Health Crisis Alert**  
+![](crisis1.jpg)
+![](crisis2.jpg)
+![](crisis3.jpg)
 
+   * Description: This feature is only activated when the public health crisis is currently active, and has not been officially ended. All users will be able to see historical list of previous crises, and read articles related to each crisis.  If there is no active public health crisis, there will be no interaction with this feature by any users, and no access to it. To activate the alert on the main page (/Home/Index), the administrator of the page needs to log in, and navigate to /Crisis/Index where, as added security, they will be re-directed to appropriate page based on their permissions. When redirected, administrators can create new “Crisis” entry which will make this crisis active. To deactivate crisis alert, admin can update the crisis from the administrator interface. Administrators also able to add, edit, and delete articles accessible from /Article/Index, where they will be redirected to admin interface
+    * Files Contributed:
+      * Models:
+        * Crisis.cs – represents information needed to describe the idea of “Crisis” entry, and list of all articles
+        * Article.cs – represent information needed to describe an “Article” entry
+      * ViewModels:
+        * ShowCrisis.cs – allows to pass information about both article and crisis to same view
+      * Views: 
+        * Article:
+          * Add.cshtml – administrator interface where they can add new article
+          * Index.cshtml – the page which re-directs user to appropriate interface based on their permissions.
+          * List.cshtml – Public list of all articles and crises list in the system
+          * ListAdm.cshtml – Administrator interface in addition to see a list of all articles and crises, it displays controls that allow to update or delete the record
+          * Update.cshtml – Administrator page, where they can update specific record selected from administrator list interface
+          * ViewArticle.cshtml – Public page to read selected article from list of all articles
+        * Crisis:
+          * Add.cshtml - administrator interface where they can add new crisis, and automatically create an alert on main page
+          * Index.cshtml – this page redirects user to appropriate public or administrator list of all crisis’s records
+          * List.cshtml – public list of crises 
+          * ListAdm.cshtml – Administrator view of crises list, where they have controls to update, edit, or delete record
+          * Update.cshtml – Administrator page, where they can update specific record selected from administrator list interface
+          * ViewCrisis.cs - Public page where users can see all articles related to the crisis
+      * Controllers:
+        * ArticleController.cs, CrisisControler.cs – enables functionality and interaction between models, views, and databases
 
 ### Paul: Log in system + Get Well Soon Card
   * Log in system
